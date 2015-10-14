@@ -100,7 +100,7 @@
 				<?php
 
 				// nos conectamos con la base de datos
-				$conn = mysql_connect('localhost', 'manuel11_AdmiCar', 'k1uRdZf)6xwp');
+				$conn = mysql_connect('localhost', 'root', '');
 				if (!$conn or !mysql_select_db('manuel11_carteles2013', $conn)) die('cannot connect to db');
 				 
 				// nuevas busquedas

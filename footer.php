@@ -10,8 +10,8 @@ $counter_ignore_ips = array('127.0.0.50', '127.0.0.30');
 
 // configuracion de la base de datos
 $counter_host = "localhost";
-$counter_user = "manuel11_AdmiCar";
-$counter_password = "k1uRdZf)6xwp";
+$counter_user = "root";
+$counter_password = "";
 $counter_database = "manuel11_carteles2013";
 
 // obteniendo informacion basica

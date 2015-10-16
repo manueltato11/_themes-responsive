@@ -195,49 +195,53 @@ if ($counter_connected == true)
 
 ?>
 </div>
-<!-- End Wrapper -->
+<!-- End container-fluid -->
 <!-- Begin Footer -->
-<div id="vote_response"></div>
-<center>
-<div id="footer">
-	<div class="furniture">
+<div class="secondary col-md-12 col-sm-12 col-xs-12">
+   <div class="panel panel-primary">
+     <div class="panel-body">
+     <div id="vote_response"></div>
+       <div class="text-center" id="footer">
+         <div class="furniture">
+              <?php echo "Hoy: ".$day_value." visitas"." | "."Esta Semana: ".$week_value." visitantes"." | "."Total Visitantes: ".$all_value;?><br/>
+                  <?php echo "Usuarios Online: ".$online. " | "; ?>
+                  <!-- Consulta de usuarios registrados-->
+                  <?php
+                  $sql="SELECT * FROM tablicacms_users"; 
+                  $result=mysql_query($sql); 
+                  $num=mysql_num_rows($result); 
+                  echo "Usuarios Registrados: ".$num;  
+                  ?>
+                  <!-- Consulta de Carteles creados-->
+                  <?php
+                  $sql="SELECT * FROM tentego_img"; 
+                  $result=mysql_query($sql); 
+                  $num=mysql_num_rows($result); 
+                  echo " | Carteles Creados: ".$num;  
+              ?>
+              <br/>
+              <?php echo "Record del Sitio: ".$record_value.", "; ?> (<?php echo date("d.m.Y", strtotime($record_date)) ?>)
 
-        <?php echo "Hoy: ".$day_value." visitas"." | "."Esta Semana: ".$week_value." visitantes"." | "."Total Visitantes: ".$all_value;?><br/>
-            <?php echo "Usuarios Online: ".$online. " | "; ?>
-            <!-- Consulta de usuarios registrados-->
-            <?php
-            $sql="SELECT * FROM tablicacms_users"; 
-            $result=mysql_query($sql); 
-            $num=mysql_num_rows($result); 
-            echo "Usuarios Registrados: ".$num;  
-            ?>
-            <!-- Consulta de Carteles creados-->
-            <?php
-            $sql="SELECT * FROM tentego_img"; 
-            $result=mysql_query($sql); 
-            $num=mysql_num_rows($result); 
-            echo " | Carteles Creados: ".$num;  
-        ?>
-        <br/>
-        <?php echo "Record del Sitio: ".$record_value.", "; ?> (<?php echo date("d.m.Y", strtotime($record_date)) ?>)
-
-           <script type="text/javascript" id="_waugfg" async>var _wau = _wau || []; _wau.push(["small", "9ao3j6g4n4yd", "gfg"]);
-            (function() {var s=document.createElement("script"); s.async=true;
-            s.src="http://widgets.amung.us/small.js";
-            document.getElementsByTagName("head")[0].appendChild(s);
-            })();</script>
-
-		<div class="links">
-			<a href="<?php echo $rewrite->contact; ?>">Contactenos</a>
-			<img src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/img/navigation_symbol.png" alt="symbol" />
-			<a href="<?php echo $rewrite->rules; ?>">Reglamentos del Sitio</a>
-         <img src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/img/navigation_symbol.png" alt="symbol" />
-         <a href="<?php echo $rewrite->mapadelsitio; ?>">Mapa del Sitio</a>		
-		</div>
-		<span class="copyrights">Copyright © Powered by <a href="">TenTego</a></span>
-	</div>
-</div></center>
+                 <script type="text/javascript" id="_waugfg" async>var _wau = _wau || []; _wau.push(["small", "9ao3j6g4n4yd", "gfg"]);
+                  (function() {var s=document.createElement("script"); s.async=true;
+                  s.src="http://widgets.amung.us/small.js";
+                  document.getElementsByTagName("head")[0].appendChild(s);
+                  })();</script>
+            <div class="links">
+               <a href="<?php echo $rewrite->contact; ?>">Contactenos</a>
+               <img src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/img/navigation_symbol.png" alt="symbol" />
+               <a href="<?php echo $rewrite->rules; ?>">Reglamentos del Sitio</a>
+               <img src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/img/navigation_symbol.png" alt="symbol" />
+               <a href="<?php echo $rewrite->mapadelsitio; ?>">Mapa del Sitio</a>      
+            </div>
+            <span class="copyrights">Copyright © Powered by <a href="">TenTego</a></span>
+         </div>
+      </div>  
+   </div>
+</div> <!-- END col-md-4-->
 <!-- End Footer -->
+
+<!-- <script type="text/javascript" async src="http://code.jquery.com/jquery-latest.js"></script> -->
 </body>
 </html>
 

@@ -78,7 +78,7 @@
 	</div>
 	<div class="panel panel-primary">
 	  <div class="panel-body">
-		<?php echo $ads->load('<div style="position:fixed;right:10px;top:200px;">#AD[right]#</div>'); ?>
+		<?php echo $ads->load('<div class="text-center">#AD[right]#</div>'); ?>
 	  </div>
 	</div>
   </div> <!-- END col-md-4-->

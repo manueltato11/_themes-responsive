@@ -3,6 +3,8 @@
 
       xmlns:og="http://ogp.me/ns#"
 
+      xmlns:fb="http://ogp.me/ns/fb#"
+
       xmlns:fb="https://www.facebook.com/2008/fbml"
 
       lang="es" xml:lang="es">
@@ -56,14 +58,19 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/css/style.css" />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
 	<!-- javascript y jquery para Ajax -->
+	
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/messages.js"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/scripts.js"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?vote"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?favorites"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?mod"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/facebook.js"></script>
-	<script type="text/javascript" async src="http://s7.addthis.com/js/250/addthis_widget.js"></script>
+	<!-- <script type="text/javascript" async src="http://s7.addthis.com/js/250/addthis_widget.js"></script> -->
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-549a4cda38e1acac" async="async"></script>
+	
 	<script type="text/javascript" src="js/ajax.js" ></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.min.js"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.form.js"></script>

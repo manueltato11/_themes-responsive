@@ -31,25 +31,41 @@
 					</span>
 				</div>
 				[object url='.$rewrite->img("#ID#","#REWRITE-TITLE#").']
-			</div>
-			<!-- End Object -->
-			<!-- Begin Share -->
-			<div class="share">
+			</div><!-- End Object -->
+			<!-- Votos y Redes sociales-->
+			<div class="shared">
 				<div class="addthis_toolbox addthis_default_style " 
 					addthis:title="#TITLE#, #SOURCE# #CartelesCreativos #Desmotivaciones"
 					addthis:url="'.$rewrite->img("#ID#", "#REWRITE-TITLE#").'"
 					addthis:description="'.$page->load('description').'"
-					addthis:screenshot="#SCREENSHOT#"> 
+					addthis:screenshot="#SCREENSHOT#">
+
+					<a class="buttons me-gusta"><span>Me gusta </span><span class="fa fa-thumbs-o-up"></span></a>
+					<a class="buttons no-me-gusta"><span>No me gusta </span><span class="fa fa-thumbs-o-down"></span></a>
+					<a class="buttons facebook"><span><span class="fa fa-facebook"></span> Compartir</span></a>
+					<a class="buttons twitter"><span class="fa fa-twitter"></span><span> Twittear</span></a>
+					<a class="buttons google-plus"><span><span class="fa fa-google-plus"></span> Google+</span></a>
+					<a class="buttons pinterest"><span><span class="fa fa-pinterest"></span> Pinterest</span></a>
+
 					<a class="addthis_button_facebook_like" fb:like:layout="box_count" fb:like:width="67"></a>
 					<a class="addthis_button_tweet" tw:count="vertical"></a>
 					<a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
-				  </div> 
-			</div>
-			<!-- End Share -->
+				</div>
+
+				<div class="meGusta">
+				  Me Gusta!
+				</div>
+				<div class="noMeGusta">
+				  No me Gusta!
+				</div>
+				<div class="redesSociales">
+				  Redes sociales!
+				</div>
+			</div> <!-- END shared -->
 			<div style="clear: both;"></div>
 		</div>
 		#MOD_TOOLS#',0,@$_GET['page'],$page->load('objects_per_page'));
-		echo '<div class="pagination">'.$img->pagination(' <a href="?page=#" class="square previous">&laquo;</a> ',' <a href="?page=#" class="square number">#</a> ', ' <span class="square current">#</span> ', ' <a href="?page=#" class="square next">&raquo;</a> ',$page->load('objects_per_page'),0,@$_GET['page']).'</div>';
+		echo '<nav class="text-center"><ul class="pagination">'.$img->pagination(' <li><a href="?page=#">«</a></li> ',' <li><a href="?page=#">#</a></li> ', ' <li class="active disabled"><a>#</a></li> ', ' <li><a href="?page=#">»</a></li> ',$page->load('objects_per_page'),0,@$_GET['page']).'</ul></nav>';
 		?>
 	  </div>
 	</div>

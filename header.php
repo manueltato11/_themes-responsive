@@ -58,15 +58,17 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/css/rrssb.css" />
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
 	<!-- javascript y jquery para Ajax -->
-	
+
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/messages.js"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/scripts.js"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?vote"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?favorites"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?mod"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/facebook.js"></script>
+	<script type="text/javascript" async src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	<!-- <script type="text/javascript" async src="http://s7.addthis.com/js/250/addthis_widget.js"></script> -->
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-549a4cda38e1acac" async="async"></script>
@@ -119,9 +121,6 @@ if(document.location.protocol=='http:'){
 }
 </script>
 <!-- END Tynt Script -->
-<!-- pinterest -->
-<script type="text/javascript" async  data-pin-color="red" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
-<!--END pinterest -->
 <!-- Start of Woopra Code -->
 <script>
 (function(){

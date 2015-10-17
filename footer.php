@@ -242,6 +242,7 @@ if ($counter_connected == true)
 <!-- End Footer -->
 
 <!-- <script type="text/javascript" async src="http://code.jquery.com/jquery-latest.js"></script> -->
+<script type="text/javascript" async src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/rrssb.min.js"></script>
 </body>
 </html>
 

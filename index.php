@@ -40,31 +40,78 @@
 					addthis:description="'.$page->load('description').'"
 					addthis:screenshot="#SCREENSHOT#">
 
-					<a class="buttons me-gusta"><span>Me gusta </span><span class="fa fa-thumbs-o-up"></span></a>
-					<a class="buttons no-me-gusta"><span>No me gusta </span><span class="fa fa-thumbs-o-down"></span></a>
-					<a class="buttons facebook"><span><span class="fa fa-facebook"></span> Compartir</span></a>
-					<a class="buttons twitter"><span class="fa fa-twitter"></span><span> Twittear</span></a>
-					<a class="buttons google-plus"><span><span class="fa fa-google-plus"></span> Google+</span></a>
-					<a class="buttons pinterest"><span><span class="fa fa-pinterest"></span> Pinterest</span></a>
+					<!-- Buttons social start -->
+					<ul class="rrssb-buttons clearfix">
+					  <li class="rrssb-me-gusta">
+			          	<a href="https://www.facebook.com/sharer/sharer.php?u='.$rewrite->img("#ID#", "#REWRITE-TITLE#").'" class="popup">
+			            <span class="rrssb-icon">
+			              <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M384 1344q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm1152-576q0-51-39-89.5t-89-38.5h-352q0-58 48-159.5t48-160.5q0-98-32-145t-128-47q-26 26-38 85t-30.5 125.5-59.5 109.5q-22 23-77 91-4 5-23 30t-31.5 41-34.5 42.5-40 44-38.5 35.5-40 27-35.5 9h-32v640h32q13 0 31.5 3t33 6.5 38 11 35 11.5 35.5 12.5 29 10.5q211 73 342 73h121q192 0 192-167 0-26-5-56 30-16 47.5-52.5t17.5-73.5-18-69q53-50 53-119 0-25-10-55.5t-25-47.5q32-1 53.5-47t21.5-81zm128-1q0 89-49 163 9 33 9 69 0 77-38 144 3 21 3 43 0 101-60 178 1 139-85 219.5t-227 80.5h-129q-96 0-189.5-22.5t-216.5-65.5q-116-40-138-40h-288q-53 0-90.5-37.5t-37.5-90.5v-640q0-53 37.5-90.5t90.5-37.5h274q36-24 137-155 58-75 107-128 24-25 35.5-85.5t30.5-126.5 62-108q39-37 90-37 84 0 151 32.5t102 101.5 35 186q0 93-48 192h176q104 0 180 76t76 179z" />
+			                class="cls-2" fill-rule="evenodd" />
+			              </svg>
+			            </span>
+			            <span class="rrssb-text">Me gusta</span>
+			          </a>
+			        </li>
+			        	<li class="rrssb-no-me-gusta">
+			          	<a href="https://www.facebook.com/sharer/sharer.php?u='.$rewrite->img("#ID#", "#REWRITE-TITLE#").'" class="popup">
+			            <span class="rrssb-icon">
+			              <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M384 448q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm1152 576q0-35-21.5-81t-53.5-47q15-17 25-47.5t10-55.5q0-69-53-119 18-32 18-69t-17.5-73.5-47.5-52.5q5-30 5-56 0-85-49-126t-136-41h-128q-131 0-342 73-5 2-29 10.5t-35.5 12.5-35 11.5-38 11-33 6.5-31.5 3h-32v640h32q16 0 35.5 9t40 27 38.5 35.5 40 44 34.5 42.5 31.5 41 23 30q55 68 77 91 41 43 59.5 109.5t30.5 125.5 38 85q96 0 128-47t32-145q0-59-48-160.5t-48-159.5h352q50 0 89-38.5t39-89.5zm128 1q0 103-76 179t-180 76h-176q48 99 48 192 0 118-35 186-35 69-102 101.5t-151 32.5q-51 0-90-37-34-33-54-82t-25.5-90.5-17.5-84.5-31-64q-48-50-107-127-101-131-137-155h-274q-53 0-90.5-37.5t-37.5-90.5v-640q0-53 37.5-90.5t90.5-37.5h288q22 0 138-40 128-44 223-66t200-22h112q140 0 226.5 79t85.5 216v5q60 77 60 178 0 22-3 43 38 67 38 144 0 36-9 69 49 74 49 163z"/>
+			                class="cls-2" fill-rule="evenodd" />
+			              </svg>
+			            </span>
+			            <span class="rrssb-text">No me gusta</span>
+			          </a>
+			        </li> 
+					  <li class="rrssb-facebook">
+			          	<a href="https://www.facebook.com/sharer/sharer.php?u='.$rewrite->img("#ID#", "#REWRITE-TITLE#").'" class="popup">
+			            <span class="rrssb-icon">
+			              <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="29" height="29" viewBox="0 0 29 29">
+			                <path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"
+			                class="cls-2" fill-rule="evenodd" />
+			              </svg>
+			            </span>
+			            <span class="rrssb-text">Compartir</span>
+			          </a>
+			        </li> 
+					 <li class="rrssb-twitter">
+			          <a href="https://twitter.com/intent/tweet?text=#TITLE#, #SOURCE# %20%23CartelesCreativos%20%23Desmotivaciones '.$rewrite->img("#ID#", "#REWRITE-TITLE#").'" class="popup">
+			            <span class="rrssb-icon">
+			              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+			                <path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62c-3.122.162-6.22-.646-8.86-2.32 2.702.18 5.375-.648 7.507-2.32-2.072-.248-3.818-1.662-4.49-3.64.802.13 1.62.077 2.4-.154-2.482-.466-4.312-2.586-4.412-5.11.688.276 1.426.408 2.168.387-2.135-1.65-2.73-4.62-1.394-6.965C5.574 7.816 9.54 9.84 13.802 10.07c-.842-2.738.694-5.64 3.434-6.48 2.018-.624 4.212.043 5.546 1.682 1.186-.213 2.318-.662 3.33-1.317-.386 1.256-1.248 2.312-2.4 2.942 1.048-.106 2.07-.394 3.02-.85-.458 1.182-1.343 2.15-2.48 2.71z"
+			                />
+			              </svg>
+			            </span>
+			            <span class="rrssb-text">Twittear</span>
+			          </a>
+			        </li>
+			        <li class="rrssb-googleplus">
+			          <a href="https://plus.google.com/share?url='.$rewrite->img("#ID#", "#REWRITE-TITLE#").'" class="popup">
+			            <span class="rrssb-icon">
+			              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 8.29h-1.95v2.6h-2.6v1.82h2.6v2.6H21v-2.6h2.6v-1.885H21V8.29zM7.614 10.306v2.925h3.9c-.26 1.69-1.755 2.925-3.9 2.925-2.34 0-4.29-2.016-4.29-4.354s1.885-4.353 4.29-4.353c1.104 0 2.014.326 2.794 1.105l2.08-2.08c-1.3-1.17-2.924-1.883-4.874-1.883C3.65 4.586.4 7.835.4 11.8s3.25 7.212 7.214 7.212c4.224 0 6.953-2.988 6.953-7.082 0-.52-.065-1.104-.13-1.624H7.614z" class="popup"/></svg>            </span>
+			            <span class="rrssb-text">google+</span>
+			          </a>
+			        </li>
+			        <li class="rrssb-pinterest">
+			          <a href="http://pinterest.com/pin/create/button/?url='.$rewrite->img("#ID#", "#REWRITE-TITLE#").'&amp;media=#SCREENSHOT#&amp;description=#TITLE#, #SOURCE#%20%23CartelesCreativos%20%23Desmotivaciones" class="popup">
+			            <span class="rrssb-icon">
+			              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+			                <path d="M14.02 1.57c-7.06 0-12.784 5.723-12.784 12.785S6.96 27.14 14.02 27.14c7.062 0 12.786-5.725 12.786-12.785 0-7.06-5.724-12.785-12.785-12.785zm1.24 17.085c-1.16-.09-1.648-.666-2.558-1.22-.5 2.627-1.113 5.146-2.925 6.46-.56-3.972.822-6.952 1.462-10.117-1.094-1.84.13-5.545 2.437-4.632 2.837 1.123-2.458 6.842 1.1 7.557 3.71.744 5.226-6.44 2.924-8.775-3.324-3.374-9.677-.077-8.896 4.754.19 1.178 1.408 1.538.49 3.168-2.13-.472-2.764-2.15-2.683-4.388.132-3.662 3.292-6.227 6.46-6.582 4.008-.448 7.772 1.474 8.29 5.24.58 4.254-1.815 8.864-6.1 8.532v.003z"
+			                />
+			              </svg>
+			            </span>
+			            <span class="rrssb-text">pinterest</span>
+			          </a>
+			        </li>
+					</ul>
+					<!-- END Buttons social -->
 
-					<a class="addthis_button_facebook_like" fb:like:layout="box_count" fb:like:width="67"></a>
-					<a class="addthis_button_tweet" tw:count="vertical"></a>
-					<a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
 				</div>
 
-				<div class="meGusta">
-				  Me Gusta!
-				</div>
-				<div class="noMeGusta">
-				  No me Gusta!
-				</div>
-				<div class="redesSociales">
-				  Redes sociales!
-				</div>
 			</div> <!-- END shared -->
 			<div style="clear: both;"></div>
-		</div>
-		#MOD_TOOLS#',0,@$_GET['page'],$page->load('objects_per_page'));
+			#MOD_TOOLS#
+		</div>		
+		',0,@$_GET['page'],$page->load('objects_per_page'));
 		echo '<nav class="text-center"><ul class="pagination">'.$img->pagination(' <li><a href="?page=#">«</a></li> ',' <li><a href="?page=#">#</a></li> ', ' <li class="active disabled"><a>#</a></li> ', ' <li><a href="?page=#">»</a></li> ',$page->load('objects_per_page'),0,@$_GET['page']).'</ul></nav>';
 		?>
 	  </div>

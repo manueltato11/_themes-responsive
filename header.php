@@ -68,8 +68,6 @@
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?favorites"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?mod"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/facebook.js"></script>
-	<script type="text/javascript" async src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-	<!-- <script type="text/javascript" async src="http://s7.addthis.com/js/250/addthis_widget.js"></script> -->
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-549a4cda38e1acac" async="async"></script>
 	
@@ -149,7 +147,7 @@ woopra.track();
 <div style="float: left; padding-top:15px; padding-left:1px;" class="fb-like" data-href="https://www.facebook.com/Cartelescreativos" data-width="50" data-layout="box_count" data-show-faces="false" data-send="false"></div></div> -->
 <!-- End Fans Facebook Flota-->
 	<?php echo $ads->load('<div style="position:fixed;left:10px;top:200px;">#AD[left]#</div>'); ?>
-	<?php $user->userTemplateInfo(NULL,$inbox->notification($user->userInfo('id'))); ?>
+	<!-- <?php // $user->userTemplateInfo(NULL,$inbox->notification($user->userInfo('id'))); ?> -->
   
   <!-- Begin Header -->
   <nav  class="navbar navbar-default">
@@ -216,5 +214,12 @@ woopra.track();
   </nav>
   <!-- End Header -->
   <!-- Begin Wrapper -->
+	<!-- Notificaciones
+  <div class="col-md-12">
+  	<div class="alert alert-dismissible alert-primary">
+	  <button type="button" class="close" data-dismiss="alert">×</button>
+	  <p>Bienvenidos al mejor sitio para crear y compartir Carteles o Desmotivaciones, <a href="#" class="alert-link">CartelesCreativos.com</a>.</p>
+	</div>
+  </div> -->
 <div id="container-fluid">
  <?php // include 'ads728.php'; ?>

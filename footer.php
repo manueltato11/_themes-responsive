@@ -234,7 +234,7 @@ if ($counter_connected == true)
                <img src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/img/navigation_symbol.png" alt="symbol" />
                <a href="<?php echo $rewrite->mapadelsitio; ?>">Mapa del Sitio</a>      
             </div>
-            <span class="copyrights">Copyright © Powered by <a href="">TenTego</a></span>
+            <span class="copyrights">Copyright © Created by <a href="https://twitter.com/manueltato11">Manuel Fernando</a></span>
          </div>
       </div>  
    </div>
@@ -242,6 +242,7 @@ if ($counter_connected == true)
 <!-- End Footer -->
 
 <!-- <script type="text/javascript" async src="http://code.jquery.com/jquery-latest.js"></script> -->
+<script type="text/javascript" async src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 <script type="text/javascript" async src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/rrssb.min.js"></script>
 </body>
 </html>

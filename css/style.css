@@ -23,28 +23,6 @@ img{border:0}
 
 .mod_tools a:hover{color:#FFF}
 
-.object .podpis{background:url('../img/black_point.png'); color:#eee; position:absolute; bottom:0; width:100%; padding:9px 0px 9px 0px; font-size:12px; opacity:0; visibility:hidden; -webkit-transition:all 0.2s ease-out; -moz-transition:all 0.2s ease-out; -o-transition:all 0.2s ease-out; transition:all 0.2s ease-out}
-
-.ytobject .podpis{background:url('../img/black_point.png'); color:#eee; position:absolute; bottom:0; width:100%; padding:9px 0px 9px 0px; font-size:12px}
-
-.object:hover .podpis{opacity:1; visibility:visible}
-
-.prawa{float:right; padding-right:6px; font-weight:bold}
-
-.prawa >a.thumb_up{color:#addc8a; text-decoration:none; background:url('../img/thumb_up.png') left no-repeat; padding:5px 0px 4px 22px; margin-right:10px}
-
-.prawa >a:hover.thumb_up{color:#75ca35; text-decoration:none; background:url('../img/thumb_up_hover.png') left no-repeat}
-
-.prawa >a.thumb_down{color:#faa38b; text-decoration:none; background:url('../img/thumb_down.png') right no-repeat; padding:4px 22px 8px 0px; margin-left:10px}
-
-.prawa >a:hover.thumb_down{color:#d44048; text-decoration:none; background:url('../img/thumb_down_hover.png') right no-repeat}
-
-.lewa{float:left; padding-left:6px; font-weight:bold}
-
-.lewa a{color:#c6c6c6; text-decoration:none}
-
-.lewa a:hover{color:#eee; text-decoration:none}
-
 .blue{background-color:#485f6f; background-image:url('../img/info/blue_arrow.png'),url('../img/info/blue_icon.png'); background-position:left,right; background-repeat:no-repeat,no-repeat; text-shadow:1px 1px 0px #3a4d5a; height:27px; padding:11px 0px 0px 26px}
 
 .brown{background-color:#6e5b48; background-image:url('../img/info/brown_arrow.png'),url('../img/info/brown_icon.png'); background-position:left,right; background-repeat:no-repeat,no-repeat; text-shadow:1px 1px 0px #594a3a; height:27px; padding:11px 0px 0px 26px}
@@ -85,10 +63,6 @@ img{border:0}
 .block select{height:25px; padding:0px 0px 0px 0px; padding-left:4px; float:left; width:71%; margin-bottom:10px; font-weight:bold; border:1px solid #545454; outline:1px solid #282828; background:#454545; color:#efefef}
 
 .block option{background:#444}
-
-.block button, .block input[type~=submit], .block input[type~=button]{background:#d6d6d6 url('../img/bg_button.png'); height:25px; padding:0px 0px 0px 0px; border:1px solid #545454; outline:1px solid #282828; padding-left:10px; padding-right:10px; color:#efefef; margin-top:5px; font-weight:bold}
-
-.block button:active, .block input[type~=submit]:active, .block input[type~=button]:active{background:#d6d6d6 url('img/bg_button.png') 0px -20px}
 
 .block form div.options{float:left; width:70%; text-align:left; margin-bottom:10px}
 
@@ -146,25 +120,11 @@ pre{border:1px solid #2a2a2a; margin:0; background:#424242; padding:4px; overflo
 
 #vote_response{position:fixed; bottom:15px; left:50%; width:200px; padding:5px; font-size:13px; text-align:center; margin-left:-100px; color:#0980a8; border:1px solid #b3d9e6; border-radius:5px; background:#d8eff6; display:none; z-index:100}
 
-a.add_fav{padding:5px 0 5px 23px; margin-left:10px; background:url(../img/heart.png) no-repeat left center}
+a.add_fav{background:url(../img/heart.png) no-repeat center}
 
-a.add_fav:hover{background:url(../img/heart_hover.png) no-repeat left center}
+a.add_fav:hover{background:url(../img/heart_hover.png) no-repeat center}
 
-a.del_fav{padding:5px 0 5px 23px; margin-left:10px; background:url(../img/heart_hover.png) no-repeat left center}
-
-#nastepny .prev a{font-weight:bold; color:#363636; text-decoration:none; font-size:20px}
-
-#nastepny .prev a:hover{font-weight:bold; color:#f0f0f0; text-decoration:none; font-size:20px}
-
-#nastepny .next a{font-weight:bold; color:#363636; text-decoration:none; font-size:20px}
-
-#nastepny .next a:hover{font-weight:bold; color:#f0f0f0; text-decoration:none; font-size:20px}
-
-#nastepny{height:20px}
-
-#nastepny .prev{border:2px solid #363636; padding:10px 10px 10px 10px; background-color:#96C934; font-weight:bold; border-radius:15px;   z-index:100; margin-top:2px; float:left}
-
-#nastepny .next{border:2px solid #363636; padding:10px 10px 10px 10px; background-color:#96C934; font-weight:bold; border-radius:15px; z-index:100; margin-top:2px; float:right}
+a.del_fav{background:url(../img/heart_hover.png) no-repeat center}
 
 .botonshare{float:left; padding-left:6px; text-align:center}
 
@@ -211,20 +171,6 @@ a.buttonRegistro >span{display:-moz-inline-block}
 #upload input{width:60%; margin:2px 0; float:right}
 
 #img4 img, embed, iframe, object, video{max-width:100%; min-width:100%}
-
-#etiquetas{margin-top:-25px}
-
-.relacionados{width:940px; height:230px}
-
-.also_interested{border-right:5px solid #ddd; width:620px}
-
-.also_interested img{padding:1px; width:200px; height:200px}
-
-.also_interested img:hover{-webkit-box-shadow:-5px -5px 15px -5px #888;  -moz-box-shadow:-5px -5px 15px -5px #888}
-
-.also_interested h2{color:#363636}
-
-.anuncio{float:right; width:300px; height:225px; margin-top:-255px}
 
 
 /*version 1.0 responsive*/
@@ -320,3 +266,28 @@ a.buttonRegistro >span{display:-moz-inline-block}
 .rrssb-buttons.tiny-format li.rrssb-no-me-gusta a .rrssb-icon span {
 	fill:#a40904;
 }
+
+.rrssb-buttons li.rrssb-favoritos a {
+	background-color:#CD0C06;
+}
+.rrssb-buttons li.rrssb-favoritos a:hover {
+	background-color:#a40904;
+}
+.rrssb-buttons.tiny-format li.rrssb-favoritos a .rrssb-icon span {
+	fill:#a40904;
+}
+
+.rrssb-buttons li.rrssb-descargar a {
+	background-color:#375A7F;
+}
+.rrssb-buttons li.rrssb-descargar a:hover {
+	background-color:#2c4865;
+}
+.rrssb-buttons.tiny-format li.rrssb-descargar a .rrssb-icon span {
+	fill:#2c4865;
+}
+
+/*sidebarF*/
+.fixed {position: fixed;  top:10px; }
+
+/*carteles relacionados*/

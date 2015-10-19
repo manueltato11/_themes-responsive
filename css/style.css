@@ -46,26 +46,6 @@ img{border:0}
 #footer .links img{position:relative; margin:0px 5px -2px 5px}
 #footer .copyrights{display:block; margin-top:12px; font-size:12px}
 
-.block form{font-size:16px; text-align:center; padding-bottom:10px; width:80%; margin:0 auto}
-
-.block form a{font-size:12px; text-align:center; padding-bottom:10px; width:80%; margin:0 auto}
-
-.block label{float:left; width:25%; margin-right:20px; padding-top:3px; text-align:left; height:25px}
-
-.block label .required{color:orange}
-
-.block label img{border:1px solid #282828}
-
-.block input[type~=text], .block input[type~=password], .block input[type~=email], .block input[type~=file]{background:#d6d6d6 url('../img/bg_input.png'); height:25px; padding:0px 0px 0px 0px; border:1px solid #545454; outline:1px solid #282828; padding-left:4px; color:#efefef; float:left; width:70%; margin-bottom:10px; font-weight:bold}
-
-.block textarea{background:#d6d6d6 url('../img/bg_input.png'); height:100px; padding:0px 0px 0px 0px; border:1px solid #545454; outline:1px solid #282828; padding-left:4px; color:#efefef; float:left; width:70%; margin-bottom:10px; font-weight:bold}
-
-.block select{height:25px; padding:0px 0px 0px 0px; padding-left:4px; float:left; width:71%; margin-bottom:10px; font-weight:bold; border:1px solid #545454; outline:1px solid #282828; background:#454545; color:#efefef}
-
-.block option{background:#444}
-
-.block form div.options{float:left; width:70%; text-align:left; margin-bottom:10px}
-
 #display_error{background:url('../img/title_full_ribbon.png') no-repeat; height:89px; width:1060px; padding:24px 0px 0px 55px; margin:20px -50px; font-family:Times New Roman; color:#fff; font-size:16pt; font-weight:normal; text-shadow:2px 2px 1px #64a2b6; z-index:9}
 
 .msg{text-shadow:1px 1px 0px #4A4A4A; color:#EFEFEF; border-radius:6px; padding:6px 10px; margin-bottom:15px}

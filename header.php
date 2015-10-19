@@ -150,7 +150,7 @@ woopra.track();
 	<!-- <?php // $user->userTemplateInfo(NULL,$inbox->notification($user->userInfo('id'))); ?> -->
   
   <!-- Begin Header -->
-  <nav  class="navbar navbar-default">
+  <nav role="navigation" class="navbar navbar-default">
   	<div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">

@@ -88,9 +88,21 @@ table tbody tr:hover a{color:#eee}
 
 .inbox_buttons{float:right; margin-right:112px}
 
-.inbox_button{background:rgba(0,0,0,0.1); border-radius:5px; padding:4px; font-size:12px; text-transform:uppercase; text-shadow:0; font-weight:normal; font-family:Arial; margin-left:6px}
+.inbox_button{
+	background:rgba(0,0,0,0.1); 
+	border-radius:5px; 
+	padding:4px; 
+	font-size:12px; 
+	text-transform:uppercase; 
+	text-shadow:0; 
+	font-weight:normal; 
+	font-family:Arial; 
+	margin-left:6px
+}
 
-.inbox_button:hover{background:rgba(0,0,0,0.2)}
+.inbox_button:hover{
+	background:rgba(0,0,0,0.2);
+}
 
 #pm_notification{background:rgba(0,0,0,0.6); border-radius:6px; padding:6px; top:30px; left:20px; font-color:#fff; position:fixed; z-index:777; border:1px solid #eee}
 

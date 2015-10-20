@@ -26,7 +26,7 @@
 						<div class="panel panel-primary">
 							<div class="panel-heading">Información de Perfil</div>
 							<div class="panel-body">
-								<ul style="list-style-type: none;">
+								<ul style="list-style-type: none;padding-left: initial;">
 									<li><b style="font-size: 18px;">#LOGIN#</b> - (#STATUS#)</li>
 									<li><b>Total de Carteles Compartidos:</b> #OBJECTS#</li>
 									<li><b>Fecha de Registro:</b> #REG_DATE#</li>
@@ -66,7 +66,7 @@
 	<div class="primary col-md-12 col-sm-12 col-xs-12">
 		<div class="panel panel-primary">
 		  <div class="panel-heading">
-			<h3 class="panel-title"><span class="fa fa-picture-o"></span> Carteles que he Compartido</h3>
+			<h3 class="panel-title"><span class="fa fa-picture-o"></span> Carteles Compartidos</h3>
 		  </div>
 		  <div class="panel-body">
 			<?php echo $img->getProfileObjects('<a href="'.$rewrite->img("#ID#","#REWRITE-TITLE#").'"><img src="#IMG#" title="#TITLE#" style="float:left; width:120px; height:100px; margin:1px;" /></a>', $user->userInfo('id')); ?>

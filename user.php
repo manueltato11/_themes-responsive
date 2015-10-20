@@ -1,37 +1,55 @@
 <!-- Begin Content -->
-  <div id="content">
+  <div class="content">
 	<!-- Begin Block -->
-	<div class="block roll">
-	<?php $user->userTemplateInfo(0,'
-		<h2><a href="#">Usuario #LOGIN#</a> '.$inbox->profile_link('#ID#').'</h2>
-		<div class="tresc">
-				<table>
-					<tr>
-						<td width="100%">
-						<ul style="list-style-type: none;">
-							<li><b style="font-size: 18px;">#LOGIN#</b></li>
-							<li>(#STATUS#)</li>
-							<li><b>Total de Carteles Publicados:</b> #OBJECTS#</li>
-							<li><b>Fecha de Registro:</b> #REG_DATE#</li>
-							<li><b>Ultima Vez que Ingreso:</b> #LAST_DATE#</li>
-						</ul>
-						</td>
-						<td align="right" valign="middle">#AVATAR#</td>
-					</tr>
-				</table>
+	<div class="primary col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-primary">
+			<div class="panel-heading">			
+			<?php $user->userTemplateInfo(0,'
+				<h3 class="panel-title"><span class="fa fa-user"></span> <a href="#">Perfil de #LOGIN#</a> '.$inbox->profile_link('#ID#').'</h3>
+			</div>
+		  	<div class="panel-body">
+		  		<div class="primary col-md-4 col-sm-4 col-xs-12">
+		  			<div class="panel panel-primary">
+		  				<div class="panel-body">
+							<span align="right" valign="middle">#AVATAR#</span>
+						</div>
+					</div>
+		  		</div>
+		  		<div class="primary col-md-4 col-sm-4 col-xs-12">
+		  			<div class="panel panel-primary">
+		  				<div class="panel-body">
+					  		<ul style="list-style-type: none;padding-left: initial;">
+								<li><b style="font-size: 18px;">#LOGIN#</b> - (#STATUS#)</li>
+								<li><b>Total de Carteles Publicados:</b> #OBJECTS#</li>
+								<li><b>Fecha de Registro:</b> #REG_DATE#</li>
+								<li><b>Ultima Vez que Ingreso:</b> #LAST_DATE#</li>
+							</ul>
+						</div>
+					</div>
+		  		</div>
+		  		<div class="primary col-md-4 col-sm-4 col-xs-12">
+		  			<div class="panel panel-primary">
+		  				<div class="panel-body">
+					  		ADS responsivo
+						</div>
+					</div>
+		  		</div>						
 				#MOD_TOOLS#
-		</div>',$_GET['id']); ?>
-	</div>
-	<!-- End Block -->
+			',$_GET['id']); ?>
+			</div>
+		</div>	
+	</div> <!--  END col-md-12 END Block -->
+
 	<!-- Begin Block -->
-	<div class="block roll">
-		<h1><a href="#">Carteles que ha Compartido</a></h1>
-		<div class="tresc">
-			<?php echo $img->getProfileObjects('<a href="'.$rewrite->img("#ID#","#REWRITE-TITLE#").'"><img src="#IMG#" title="#TITLE#" style="float:left; width:120px; height:100px; margin:1px;" /></a>',$_GET['id']); ?>
-			<br style="clear:both;" />
+	<div class="primary col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title"><span class="fa fa-picture-o"></span> Carteles Publicados</h3>
+			</div>
+			<div class="panel-body">
+				<?php echo $img->getProfileObjects('<a href="'.$rewrite->img("#ID#","#REWRITE-TITLE#").'"><img src="#IMG#" title="#TITLE#" style="float:left; width:120px; height:100px; margin:1px;" /></a>',$_GET['id']); ?>
+				<br style="clear:both;" />
+			</div>
 		</div>
-	</div>
-	<!-- End Block -->
-	  
-  </div>
-  <!-- End Content -->
+	</div> <!--  END col-md-12 END Block -->
+  </div><!-- End Content class=row -->

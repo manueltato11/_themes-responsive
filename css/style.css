@@ -56,7 +56,11 @@ img{border:0}
 
 .good{background:#7C9A00}
 
-.select_avatar{background:#424242; width:250px; border-radius:6px; padding:10px 5px 5px 5px}
+.select_avatar{
+	background:#424242; 
+	width:100%; border-radius:6px; 
+	padding:10px 5px 5px 5px
+}
 
 #tabs ul{border-bottom:1px solid #505050; margin-bottom:15px}
 
@@ -270,4 +274,19 @@ a.buttonRegistro >span{display:-moz-inline-block}
 /*sidebarF*/
 .fixed {position: fixed;  top:10px; }
 
-/*carteles relacionados*/
+/*campus requeridos*/
+.required {
+	color: #FF0000;
+}
+
+/*page de facebook y pinterest, responsive*/
+.fb-page, 
+.fb-page span, 
+.fb-page span iframe[style] { 
+    width: 100% !important; 
+}
+#pin-container > span {
+    box-shadow: none !important;
+    width: 100%;
+    overflow: hidden;
+}

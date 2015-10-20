@@ -1,5 +1,5 @@
   <!-- Begin Content -->
-  <div id="content" itemscope="" itemtype="http://schema.org/ImageObject">
+  <div class="content" itemscope="" itemtype="http://schema.org/ImageObject">
 	<!-- Begin Block -->
   <div class="primary col-md-8 col-sm-12 col-xs-12">
 	<div class="panel panel-primary">
@@ -11,7 +11,7 @@
 		'.($page->load('object_title')?'<h2 class="titulo" itemprop="name"><span>#TITLE#</span></h2>':'').'
 		<div class="info">
 			<span><span class="fa fa-check-square-o"></span><strong> Descripción: </strong> #TITLE#, #SOURCE#</span><br>
-			<span><span class="fa fa-picture-o"></span><strong> Carteles de: </strong> #CATEGORY# </span> | 
+			<span><span class="fa fa-picture-o"></span><strong> Cartel de: </strong> #CATEGORY# </span> | 
 			<span><span class="fa fa-user"></span><strong> Autor(a): </strong> <a href="'.$rewrite->user("#OWNER-ID#", "#REWRITE-OWNER#").'" title="Ver Perfil de #OWNER#">#OWNER#</a></span> | 
 			<span><span class="fa fa-clock-o"></span><strong> Publicada el: </strong> #DATE#</span> | 
 			<span><span class="fa fa-comments"></span><strong> <a href="'.$rewrite->img("#ID#","#REWRITE-TITLE#").'#comments" title="Ver comentarios">Comentarios (<fb:comments-count href='.$rewrite->img("#ID#", "#REWRITE-TITLE#").'></fb:comments-count>)</a></strong></span><br><br>
@@ -136,7 +136,7 @@
 				<?php $img->comments('
 					<div id="fb-root"></div>
 					<meta property="fb:admins" content="ManuelFernandoMarula"/>
-					<meta property="fb:app_id" content="{386695608061555}"/>
+					<meta property="fb:app_id" content="{381252375381884}"/>
 					<div class="fb-comments" data-href="#URL#" data-width="100%" data-numposts="5" data-colorscheme="dark"></div>', $page->load('comments'));
 				?>
 		  </div>
@@ -193,7 +193,7 @@
 		    <h3 class="panel-title"><span class="fa fa-facebook"></span> <span class="fa fa-twitter"></span> Siguenos en las redes sociales</h3>
 		</div>
 	  <div class="panel-body center-block">
-		<div class="fb-page" data-href="https://www.facebook.com/Cartelescreativos" data-width="100%" data-height="230" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Cartelescreativos"><a href="https://www.facebook.com/Cartelescreativos">Cartelescreativos.com</a></blockquote></div></div><br><br>
+		<div class="fb-page" data-href="https://www.facebook.com/Cartelescreativos" data-width="500" data-height="230" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Cartelescreativos"><a href="https://www.facebook.com/Cartelescreativos">Cartelescreativos.com</a></blockquote></div></div><br><br>
 		<a href="https://twitter.com/CartelesCreativ" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @CartelesCreativ en Twitter</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	  </div>
 	</div>

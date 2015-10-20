@@ -191,7 +191,7 @@ woopra.track();
       	</form>
       	<!-- End Search -->
       	<?php $user->userTemplateInfo('
-		<li><a href="'.$rewrite->login.'">Iniciar la Sesión</a></li>
+		<li><a href="'.$rewrite->login.'">Iniciar sesión</a></li>
 		<li><a href="'.$rewrite->register.'">Registrarme</a></li>',
 				 
 

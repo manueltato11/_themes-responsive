@@ -170,7 +170,6 @@ woopra.track();
         <?php $user->userTemplateInfo('
 		<li><a title="Personalizar la imagen con el título y descripción a tu gusto." href="'.$rewrite->add.'">Crear Cartel</a></li>',
 				 
-
 		'<li class="dropdown">
          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Crear Cartel <span class="caret"></span></a>
           	<ul class="dropdown-menu" role="menu">
@@ -194,7 +193,6 @@ woopra.track();
 		<li><a href="'.$rewrite->login.'">Iniciar sesión</a></li>
 		<li><a href="'.$rewrite->register.'">Registrarme</a></li>',
 				 
-
 		'<li class="dropdown">
          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">#LOGIN# <span class="caret"></span></a>
           	<ul class="dropdown-menu" role="menu">

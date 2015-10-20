@@ -37,14 +37,26 @@ img{border:0}
 
 #footer a{color:#b7b7b7}
 
-#footer .links{font-weight:bold}
+#footer .links{
+	font-weight:bold;
+	margin-top:12px; 
+}
 
-#footer .links a{color:#b7b7b7; text-decoration:none; margin:0px 0px 0px 0px}
+#footer .links a{
+	color:#b7b7b7; 
+	text-decoration:none;
+	margin:0px 0px 0px 0px;
+	margin-left: 10px;
+}
 
-#footer .links a:hover{text-decoration:none; border-bottom:1px solid #f5f5f5}
+#footer .links a:hover{
+	text-decoration:none; 
+	border-bottom:1px solid #f5f5f5;
+}
 
 #footer .links img{position:relative; margin:0px 5px -2px 5px}
-#footer .copyrights{display:block; margin-top:12px; font-size:12px}
+
+#footer .copyrights{display:block; font-size:12px}
 
 #display_error{background:url('../img/title_full_ribbon.png') no-repeat; height:89px; width:1060px; padding:24px 0px 0px 55px; margin:20px -50px; font-family:Times New Roman; color:#fff; font-size:16pt; font-weight:normal; text-shadow:2px 2px 1px #64a2b6; z-index:9}
 

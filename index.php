@@ -5,6 +5,7 @@
 	<div class="panel panel-primary">
 	  <div class="panel-body contentF">
 	    <?php
+	    global $rewrite;
 		echo $img->getObjects('
 		<div class="block">
 
@@ -128,10 +129,6 @@
 		<div class="tagcloud">
 			<ul>
 				<?php
-			   global $rewrite;
-			   // nos conectamos con la base de datos
-			   $conn = mysql_connect('localhost', 'root', '');
-			   if (!$conn or !mysql_select_db('manuel11_carteles2013', $conn)) die('cannot connect to db');
 			   // prepara las categorias para visualizarlas
 			   $query = mysql_query("SELECT  * FROM  `tentego_img_cat` ORDER BY  `tentego_img_cat`.`name` ASC ");
 			   while($cat = mysql_fetch_array($query)){

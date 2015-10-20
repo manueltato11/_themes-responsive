@@ -1,4 +1,5 @@
 <?php
+global $rewrite;
 // proteccion ip en segundos
 $counter_expire = 600;
 
@@ -191,8 +192,7 @@ if ($counter_connected == true)
    // se actualizan los datos
       $sql = "UPDATE counter_values SET day_id = '$day_id', day_value = '$day_value', yesterday_id = '$yesterday_id', yesterday_value = '$yesterday_value', week_id = '$week_id', week_value = '$week_value', month_id = '$month_id', month_value = '$month_value', year_id = '$year_id', year_value = '$year_value', all_value = '$all_value', record_date = '$record_date', record_value = '$record_value' WHERE id = 1";
       mysqli_query($link, $sql);      
-   }    
-
+   }
 ?>
 </div>
 <!-- End container-fluid -->
@@ -203,36 +203,34 @@ if ($counter_connected == true)
      <div id="vote_response"></div>
        <div class="text-center" id="footer">
          <div class="furniture">
-              <?php echo "Hoy: ".$day_value." visitas"." | "."Esta Semana: ".$week_value." visitantes"." | "."Total Visitantes: ".$all_value;?><br/>
-                  <?php echo "Usuarios Online: ".$online. " | "; ?>
+              <?php echo "<span class='badge'>Hoy: ".number_format($day_value)." visitas</span>"." "."<span class='badge'>Esta Semana: ".number_format($week_value)." visitantes</span>"." "."<span class='badge'>Total Visitantes: ".number_format($all_value);?></span><br/>
+                  <?php echo "<span class='badge'>Usuarios Online: ".number_format($online). "</span> "; ?>
                   <!-- Consulta de usuarios registrados-->
                   <?php
                   $sql="SELECT * FROM tablicacms_users"; 
                   $result=mysql_query($sql); 
                   $num=mysql_num_rows($result); 
-                  echo "Usuarios Registrados: ".$num;  
+                  echo "<span class='badge'>Usuarios Registrados: ".number_format($num)."</span>";  
                   ?>
                   <!-- Consulta de Carteles creados-->
                   <?php
                   $sql="SELECT * FROM tentego_img"; 
                   $result=mysql_query($sql); 
                   $num=mysql_num_rows($result); 
-                  echo " | Carteles Creados: ".$num;  
+                  echo " <span class='badge'>Carteles Creados: ".number_format($num)."</span>";  
               ?>
               <br/>
-              <?php echo "Record del Sitio: ".$record_value.", "; ?> (<?php echo date("d.m.Y", strtotime($record_date)) ?>)
-
+              <?php echo "<span class='badge'>Record del Sitio: ".number_format($record_value)." "; ?> (<?php echo date("d-m-Y", strtotime($record_date)) ?>)</span>
+                 <br>
                  <script type="text/javascript" id="_waugfg" async>var _wau = _wau || []; _wau.push(["small", "9ao3j6g4n4yd", "gfg"]);
                   (function() {var s=document.createElement("script"); s.async=true;
                   s.src="http://widgets.amung.us/small.js";
                   document.getElementsByTagName("head")[0].appendChild(s);
                   })();</script>
             <div class="links">
-               <a href="<?php echo $rewrite->contact; ?>">Contactenos</a>
-               <img src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/img/navigation_symbol.png" alt="symbol" />
-               <a href="<?php echo $rewrite->rules; ?>">Reglamentos del Sitio</a>
-               <img src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/img/navigation_symbol.png" alt="symbol" />
-               <a href="<?php echo $rewrite->mapadelsitio; ?>">Mapa del Sitio</a>      
+               <a href="<?php echo $rewrite->contact; ?>"><span class="fa fa-envelope-o"></span>  Contactenos</a>
+               <a href="<?php echo $rewrite->rules; ?>"><span class="fa fa-bars"></span>  Reglamentos del Sitio</a>
+               <a href="<?php echo $rewrite->mapadelsitio; ?>"><span class="fa fa-sitemap"></span>  Mapa del Sitio</a>
             </div>
             <span class="copyrights">Copyright © Created by <a href="https://twitter.com/manueltato11">Manuel Fernando</a></span>
          </div>

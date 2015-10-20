@@ -1,6 +1,6 @@
 <?php
 //require_once 'connect.php';
-$conexion=mysql_connect("localhost","manuel11_AdmiCar","k1uRdZf)6xwp") or exit("No se conecta".mysql_error()); // Conexion con el servidor db (servidor,usuario, pass)
+$conexion=mysql_connect("localhost","root","") or exit("No se conecta".mysql_error()); // Conexion con el servidor db (servidor,usuario, pass)
 mysql_select_db("manuel11_carteles2013",$conexion) or exit("No se conecta con la base de datos".mysql_error()); // Seleccionamos la base de datos
 $catConsulta=mysql_query("SELECT * FROM `tentego_img_cat` ORDER BY `name` ASC");
 $resultCat=mysql_num_rows($catConsulta)

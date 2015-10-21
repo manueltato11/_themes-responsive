@@ -1,68 +1,97 @@
+<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.upload.js"></script>
+<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.min.js"></script>
+<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.form.js"></script>
+
 <?php
-//require_once 'connect.php';
-$conexion=mysql_connect("localhost","root","") or exit("No se conecta".mysql_error()); // Conexion con el servidor db (servidor,usuario, pass)
-mysql_select_db("manuel11_carteles2013",$conexion) or exit("No se conecta con la base de datos".mysql_error()); // Seleccionamos la base de datos
+global $rewrite;
 $catConsulta=mysql_query("SELECT * FROM `tentego_img_cat` ORDER BY `name` ASC");
 $resultCat=mysql_num_rows($catConsulta)
-
 ?>
-
-<div id="contentSube">
-<div style="text-align:center;">
-<div class="tle" style="border: 2px solid blue;">PASO 1: Sube una foto</div>
-<!-- PASO 1-->
-<div style="height:100px; margin:10px; padding: 10px;">	
-	<div>
-				<!-- formulario con el que se carga la imagen via ajax -->
-				<form id="imageform"  method="post" enctype="multipart/form-data" action="/upload.php" >
-				<div class="demot" id="upload">
-				<label for="file">Imagen<span class="ColorRed">*</span></label>
-				<input required type="file" name="photoimg" id="photoimg" class="left clear" /><br />
-				</div>
-				</form>
-	</div>		
-</div>
-<!-- PASO 2-->
-
-							<!-- formulario que envia la foto para ser procesada -->
-			<!-- si te fijas hasta el moento no hace nada  a la imagen solo la carga en un a carpeta al servidor -->
-			<!-- y la redimenciona y la manda a este formulariopara poner el titulo y la descripcion -->
-			<div class="tle" style="border: 2px solid blue;">PASO 2: Completa el Titulo y la descripci&oacute;n</div>
-			</br>
-			<form id="form" method="post" action="/crearCartel.php">
-			<center>
-				<div id="preview-container" class="left clear">
-					<div id="preview-all" class="left pad">
-						<div id="preview" class="left padd">
-							<div id="imagen_t"><img src="/img/bglogo.png" width="440" height="300" title=""></div>
+  <!-- Begin Content -->
+  <div class="content">
+  <!-- Begin Block -->
+	  <div class="primary col-md-12 col-sm-12 col-xs-12">
+		<div class="panel panel-primary">
+		  <div class="panel-body">
+			ADS login responsivo 728x90
+		  </div>
+		</div>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+	    		<h3 class="panel-title"><span class="fa fa-plus"></span> Crear Cartel Personalizado</h3>
+			</div>
+		  <div class="panel-body">
+			<div class="text-center">
+				<!-- PASO 1-->
+				<div class="tle">
+					<p>PRIMER PASO: Selecciona tu imagen.</p>
+					<div class="img-responsive center-block img-rounded" >	
+						<!-- formulario con el que se carga la imagen via ajax -->
+						<form id="imageform" method="post" enctype="multipart/form-data" action="upload.php" >
+						<div class="demot center-block" id="upload">
+							<label for="file">Imagen<span class="required">*</span></label>
+							<input required type="file" name="photoimg" id="photoimg" class="left clear" /><br />
 						</div>
-						<div id="preview-form" class="left clear">
-								<input required type="text" placeholder="TÍTULO" name="titulo" maxlength="36" class="left h1 preview-form">
-								<textarea  required name="descp" rows="3" class="left clear h2 preview-form" placeholder="Descripci&oacute;n"></textarea>
+						</form>	
+					</div>
+				</div>
+				<div class="tle text-left recomendaciones"><p class="text-center"> <span class="fa fa-info-circle"></span> RECOMENDACIONES</p>
+					<p class="text-primary">Un buen Cartel debe de contener: </p>
+						<ol>
+							<li class="text-success">Muy buena ortografía.</li>
+							<li class="text-success">Una imagen de buena calidad.</li>
+							<li class="text-success">Un título corto y muy descriptivo con el mensaje.</li>
+							<li class="text-success">El título y la descripción deben de coincidir con el contenido de la imagen.</li>
+							<li class="text-success">Seleccionar la categoría correcta que mejor describe de qué trata el cartel.</li>
+						</ol>
+					<p class="text-primary">Un Cartel nunca debe de tener: </p>
+						<ol>
+							<li class="text-danger">Cartel sin sentido alguno.</li>
+							<li class="text-danger">Cartel con imagenes ofensivas o racistas.</li>
+							<li class="text-danger">Cartel que no hace parte de ninguna categoría, es aquel que contiene imágenes personales o sacadas con el móvil de mala Calidad. <a href="http://www.cartelescreativos.com/imagenes/2361/mi-princesa-ruth/">Ver un ejemplo.</a></li>
+						</ol>
+					<p class="text-success"><a href="http://www.cartelescreativos.com/normas/">Ver normas de la comunidad</a></p>
+				</div>
+				<!-- PASO 2-->
+				<!-- formulario que envia la foto para ser procesada -->
+				<div class="tle">
+					<p>SEGUNDO PASO: Completa el título y la descripción.</p>
+					<div class="img-responsive center-block img-rounded" >
+					<form id="form" method="post" action="crearCartel.php">
+						<div id="preview-container" class="left clear img-responsive center-block img-rounded">
+							<div id="preview-all" class="left pad img-responsive center-block img-rounded">
+								<div id="preview" class="left padd img-responsive center-block img-rounded">
+									<div id="imagen_t"><img src="img/bglogo.png" width="440" height="300" title=""></div>
+								</div>
+								<div id="preview-form" class="left clear">
+									<input required type="text" placeholder="TÍTULO" name="titulo" maxlength="36" class="left h1 preview-form">
+									<textarea  required name="descp" rows="3" class="left clear h2 preview-form" placeholder="Descripción"></textarea>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				</br>
-				<div class="tle" style="border: 2px solid blue;">
-				<label for="selCat">PASO 3: Seleccionar Categoria <span class="ColorRed">*</span></label>
-  				<select required name="selCat" id="selCat">
-  				<option></option>
-  				<?php 
-					while ($mostcat = mysql_fetch_array($catConsulta))
-					{
-					echo"<option $mostcat[id]>$mostcat[name]";
-
-					}
-					echo "</option>";
-				?>
-  				</select>
-  				</div>
-				</br></br>
-				<input type="submit" name="submit_des" value="Enviar" class="clear button verde medium save" style="width:69%; margin-left:1px;">
-				<input type="hidden" id="color" name="color" value="0,0,0">
-				<input type="hidden" id="fuente" name="fuente" value="arial">
-				</center>
-			</form>
+				<div class="tle">
+				<label for="selCat">TERCER PASO: Selecciona la Categoria <span class="required">*</span></label>
+					<select required name="selCat" id="selCat">
+					<option></option>
+					<?php 
+						while ($mostcat = mysql_fetch_array($catConsulta))
+						{
+						echo"<option $mostcat[id]>$mostcat[name]";
+						}
+						echo "</option>";
+					?>
+					</select>
+				</div>
+					</br>
+					<input type="submit" name="submit_des" value="Enviar" class="btn btn-primary" style="width:69%; margin-left:1px;">
+					<input type="hidden" id="color" name="color" value="0,0,0">
+					<input type="hidden" id="fuente" name="fuente" value="arial">
+				</form>
+				</div>
 			</div>
-		</div>
-	</div>
+		  </div> <!-- Panel-body -->
+		</div> <!-- END panel panel-primary-->
+	  </div> <!-- END col-md-12-->
+  </div> <!-- End Content class=row -->

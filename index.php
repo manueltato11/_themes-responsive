@@ -154,28 +154,29 @@
 	  </div>
 	</div>
 	<script type="text/javascript" async>
-	  $(document).ready(function () {  
-	  var top = $('.sidebarF').offset().top - parseFloat($('.sidebarF').css('marginTop').replace(/auto/, 0));
-	  $(window).scroll(function (event) {
-	    var y = $(this).scrollTop();
+	jQuery.noConflict();
+	  jQuery(document).ready(function () {  
+	  var top = jQuery('.sidebarF').offset().top - parseFloat($('.sidebarF').css('marginTop').replace(/auto/, 0));
+	  jQuery(window).scroll(function (event) {
+	    var y = jQuery(this).scrollTop();
 	    if (y >= top) {
-	      $('.sidebarF').addClass('fixed');
+	      jQuery('.sidebarF').addClass('fixed');
 	     
-	      var sidebarheight = $('.sidebarF').height();
-	      var contentheight = $('.contentF').height();
+	      var sidebarheight = jQuery('.sidebarF').height();
+	      var contentheight = jQuery('.contentF').height();
 	        
 	 if (y > (contentheight - sidebarheight)) {
-	     $('.sidebarF').css({marginTop: contentheight - sidebarheight - 10});
-	     $('.sidebarF').removeClass('fixed');
+	     jQuery('.sidebarF').css({marginTop: contentheight - sidebarheight - 10});
+	     jQuery('.sidebarF').removeClass('fixed');
 	 }
 	        else 
 	        {
-	     $('.sidebarF').css({marginTop: '0'});
-	     $('.sidebarF').addClass('fixed');
+	     jQuery('.sidebarF').css({marginTop: '0'});
+	     jQuery('.sidebarF').addClass('fixed');
 	        }
 	        
 	    } else {
-	      $('.sidebarF').removeClass('fixed');
+	      jQuery('.sidebarF').removeClass('fixed');
 	    }
 	  });
 	});

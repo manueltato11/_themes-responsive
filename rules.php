@@ -1,14 +1,18 @@
   <!-- Begin Content -->
   <div id="content">
 	<!-- Begin Block -->
-	<div class="block">
-		<h1>Reglamento de la Comunidad</h1>
-		<div class="tresc">
-			<?php
+	 <div class="primary col-md-12 col-sm-12 col-xs-12">
+	 	<div class="panel panel-primary">
+		  <div class="panel-body">
+			ADS login responsivo 728x90
+		  </div>
+		</div>
+		<div class="panel panel-primary">
+		  <div class="panel-body">
+				<?php
 				echo $page->load('regulations');
 			?>
+		  </div>
 		</div>
-	</div>
-	<!-- End Block -->
-  </div>
-  <!-- End Content -->
+	</div> <!-- End Block -->
+  </div> <!-- End Content -->

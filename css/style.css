@@ -74,18 +74,6 @@ img{border:0}
 	padding:10px 5px 5px 5px
 }
 
-#tabs ul{border-bottom:1px solid #505050; margin-bottom:15px}
-
-#tabs ul li{display:inline; font-size:16px; padding:6px 15px 2px 15px}
-
-#tabs ul li.active{border-top:3px solid #505050; border-right:1px solid #505050; border-left:1px solid #505050; margin-top:-3px; font-weight:bold; background:#363636}
-
-#tabs ul li:first-child{margin-left:70px}
-
-#tabs ul li a{color:#c2c2c2; text-decoration:none}
-
-#tabs ul li.active a{color:#eee; text-decoration:none; cursor:default}
-
 table{font-family:"Lucida Sans Unicode","Lucida Grande",Sans-Serif; font-size:12px; border-collapse:collapse; text-align:left}
 
 table th{font-size:14px; font-weight:normal; color:#eee; padding:10px 8px; border-bottom:2px solid #eee}
@@ -140,17 +128,21 @@ a.buttonRegistro{display:-moz-inline-stack; display:inline-block; width:129px;  
 
 a.buttonRegistro >span{display:-moz-inline-block}
 
-#contentSube{border:2px solid black; padding:10px; margin:15px 2px; background:#212121; overflow:visible; font-family:Arial,Verdana,Geneva,Kalimati,sans-serif; font-size:14px; color:white}
+#preview-container{
+	text-align:left; 
+	border:1px solid #dedede; 
+	width:588px; 
+	background:#000}
 
-#contentSube .strony{text-align:center; margin:0 auto; margin-top:30px; font-size:14px; font-weight:bold}
+#form {
+	margin: 6px;
+	text-align:center;
+}
 
-#preview-container{text-align:left; border:1px solid #dedede; width:588px; background:#000}
-
-#form{margin-left:50px; text-align:center}
-
-.tle{color:gray; font-weight:bold; font-size:18px; padding:6px 0 10px 0}
-
-#preview-all{width:500px; overflow:hidden; border:4px solid #fff; font-size:12px}
+#preview-all{overflow:hidden; 
+	border:4px solid #fff; 
+	font-size:12px;
+}
 
 .pad{padding:40px}
 
@@ -168,11 +160,25 @@ a.buttonRegistro >span{display:-moz-inline-block}
 
 .titulo, h1, h2 {margin-top: 0;}
 
-.button, .button:hover{background:#009200; padding:8px 15px; border-radius:5px; border:2px solid #CCC; color:#FFF; font-size:19px; font-weight:bold; text-decoration:none}
+.demot {
+	padding:50px;
+	margin:5px auto 5px auto;
+	background:#1a1a1a;
+	overflow:visible; 
+	width:70%;
+}
+.tle{
+	color:gray;
+	font-weight:bold; 
+	font-size:18px; 
+	padding:10px 0 10px 0;
+	margin-bottom: 15px;
+	border: 2px solid blue;
+}
 
-.ColorRed{color:red; font:bold}
-
-.demot{padding:20px; margin:0 auto 0 auto; background:#1a1a1a; overflow:visible; width:70%; text-align:center}
+.recomendaciones {
+	padding-left: 10px;
+}
 
 #upload label{width:20%; float:left; margin:2px 0}
 
@@ -301,6 +307,7 @@ a.buttonRegistro >span{display:-moz-inline-block}
 /*campus requeridos*/
 .required {
 	color: #FF0000;
+	font:bold;
 }
 
 /*page de facebook y pinterest, responsive*/

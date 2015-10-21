@@ -61,22 +61,16 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/css/rrssb.css" />
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
 	<!-- javascript y jquery para Ajax -->
-
+	<script type="text/javascript" async src="http://code.jquery.com/jquery-latest.js"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/messages.js"></script>
-	<script type="text/javascript" async src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/scripts.js"></script>
+	<!-- <script type="text/javascript" async src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/scripts.js"></script> -->
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?vote"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?favorites"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?mod"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/facebook.js"></script>
-	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-549a4cda38e1acac" async="async"></script>
-	
-	<script type="text/javascript" src="js/ajax.js" ></script>
-	<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.min.js"></script>
-	<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.form.js"></script>
-	<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.upload.js"></script>
-	<script type="text/javascript" async src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" async src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/bootstrap.min.js"></script>
+	<script src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/jquery.1.10.2.min.js"></script>
+
 	<script type="text/javascript" async>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

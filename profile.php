@@ -4,8 +4,8 @@
 	<!-- Begin Block -->
 	<div class="primary col-md-12 col-sm-12 col-xs-12">
 		<div class="panel panel-primary">
-		  <div class="panel-body">
-			ADS profile responsivo 728x90
+		  <div class="panel-body text-center center-block">
+			<?php echo $ads->load('<div class="text-center center-block">#AD[left]#</div>'); ?>
 		  </div>
 		</div>
 		<div class="panel panel-primary">

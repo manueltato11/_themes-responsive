@@ -1,9 +1,3 @@
-a{color:#eee; text-decoration:none}
-
-a:hover{color:#fff; text-decoration:underline}
-
-img{border:0}
-
 .block h1 {height:89px; width:965px; position:absolute; top:-20px; left:-60px; padding:24px 0px 0px 55px; font-family:Times New Roman; color:#fff; font-size:16pt; font-weight:normal; text-shadow:2px 2px 1px #64a2b6; z-index:9}
 
 .block h2 a, .block h1 a{text-decoration:none; color:#fff}
@@ -20,52 +14,31 @@ img{border:0}
 
 .mod_tools{background:url(img/bg_object.png); margin:0px 0px 10px 0px; z-index:15; position:relative}
 .mod_tools a{display:inline-block; padding:10px; color:#CCC; font-weight:bold}
-
 .mod_tools a:hover{color:#FFF}
 
-.blue{background-color:#485f6f; background-image:url('../img/info/blue_arrow.png'),url('../img/info/blue_icon.png'); background-position:left,right; background-repeat:no-repeat,no-repeat; text-shadow:1px 1px 0px #3a4d5a; height:27px; padding:11px 0px 0px 26px}
-
-.brown{background-color:#6e5b48; background-image:url('../img/info/brown_arrow.png'),url('../img/info/brown_icon.png'); background-position:left,right; background-repeat:no-repeat,no-repeat; text-shadow:1px 1px 0px #594a3a; height:27px; padding:11px 0px 0px 26px}
-
-.red{background-color:#6e4749; background-image:url('../img/info/red_arrow.png'),url('../img/info/red_icon.png'); background-position:left,right; background-repeat:no-repeat,no-repeat; text-shadow:1px 1px 0px #533637; height:27px; padding:11px 0px 0px 26px}
-
-.green{background-color:#626f48; margin-left:19px; text-shadow:1px 1px 0px #4d5739; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; padding:10px 10px 2px 10px}
-
-.face{background-color:#3B5998; background-image:url('../img/info/descargar.png'); background-position:right; background-repeat:no-repeat; margin-left:19px; text-shadow:1px 1px 0px #4d5739; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; height:27px; padding:10px 10px 2px 10px}
-
 #footer{color:#b7b7b7; font-size:13px}
-
 #footer a{color:#b7b7b7}
-
 #footer .links{
 	font-weight:bold;
 	margin-top:12px; 
 }
-
 #footer .links a{
 	color:#b7b7b7; 
 	text-decoration:none;
 	margin:0px 0px 0px 0px;
 	margin-left: 10px;
 }
-
 #footer .links a:hover{
 	text-decoration:none; 
 	border-bottom:1px solid #f5f5f5;
 }
-
 #footer .links img{position:relative; margin:0px 5px -2px 5px}
-
 #footer .copyrights{display:block; font-size:12px}
 
 #display_error{background:url('../img/title_full_ribbon.png') no-repeat; height:89px; width:1060px; padding:24px 0px 0px 55px; margin:20px -50px; font-family:Times New Roman; color:#fff; font-size:16pt; font-weight:normal; text-shadow:2px 2px 1px #64a2b6; z-index:9}
-
 .msg{text-shadow:1px 1px 0px #4A4A4A; color:#EFEFEF; border-radius:6px; padding:6px 10px; margin-bottom:15px}
-
 .error{background:#965959}
-
 .alert{background:#B5B057}
-
 .good{background:#7C9A00}
 
 .select_avatar{
@@ -75,19 +48,13 @@ img{border:0}
 }
 
 table{font-family:"Lucida Sans Unicode","Lucida Grande",Sans-Serif; font-size:12px; border-collapse:collapse; text-align:left}
-
 table th{font-size:14px; font-weight:normal; color:#eee; padding:10px 8px; border-bottom:2px solid #eee}
-
 table td{border-bottom:1px solid #424242; color:#8a8a8a; padding:6px 8px}
-
 table td a{color:#8a8a8a}
-
 table tbody tr:hover td{color:#eee}
-
 table tbody tr:hover a{color:#eee}
 
 .inbox_buttons{float:right; margin-right:112px}
-
 .inbox_button{
 	background:rgba(0,0,0,0.1); 
 	border-radius:5px; 
@@ -99,34 +66,22 @@ table tbody tr:hover a{color:#eee}
 	font-family:Arial; 
 	margin-left:6px
 }
-
 .inbox_button:hover{
 	background:rgba(0,0,0,0.2);
 }
 
-#pm_notification{background:rgba(0,0,0,0.6); border-radius:6px; padding:6px; top:30px; left:20px; font-color:#fff; position:fixed; z-index:777; border:1px solid #eee}
-
+#pm_notification{background:rgba(0,0,0,0.6); border-radius:6px; padding:6px; top:40px; left:20px; font-color:#fff; position:fixed; z-index:777; border:1px solid #eee}
 #pm_notification .close{font-weight:bold; padding-left:10px}
 
 blockquote{border:1px solid #2a2a2a; margin:0; background:#424242; padding:4px; font-style:italic}
-
 blockquote cite{font-weight:bold; border-bottom:1px solid #363636; font-style:normal; display:block; margin:4px 0}
-
 pre{border:1px solid #2a2a2a; margin:0; background:#424242; padding:4px; overflow:auto; height:auto; max-height:200px}
 
 #vote_response{position:fixed; bottom:15px; left:50%; width:200px; padding:5px; font-size:13px; text-align:center; margin-left:-100px; color:#0980a8; border:1px solid #b3d9e6; border-radius:5px; background:#d8eff6; display:none; z-index:100}
 
 a.add_fav{background:url(../img/heart.png) no-repeat center}
-
 a.add_fav:hover{background:url(../img/heart_hover.png) no-repeat center}
-
 a.del_fav{background:url(../img/heart_hover.png) no-repeat center}
-
-.botonshare{float:left; padding-left:6px; text-align:center}
-
-a.buttonRegistro{display:-moz-inline-stack; display:inline-block; width:129px;   height:33px;   background:url("img/button.png") no-repeat;  line-height:33px;  vertical-align:text-middle;  text-align:center;  color:#fff;  font-family:Calibri; font-size:18px; font-weight:bold; font-style:normal; text-shadow:none}
-
-a.buttonRegistro >span{display:-moz-inline-block}
 
 #preview-container{
 	text-align:left; 

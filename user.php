@@ -29,8 +29,17 @@
 		  		</div>
 		  		<div class="primary col-md-4 col-sm-4 col-xs-12">
 		  			<div class="panel panel-primary">
-		  				<div class="panel-body">
-					  		ADS responsivo
+		  				<div class="panel-body text-center center-block">
+					  		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<!-- CratelesCreativos-Responsive -->
+							<ins class="adsbygoogle"
+							     style="display:block"
+							     data-ad-client="ca-pub-0162406634460320"
+							     data-ad-slot="4725435007"
+							     data-ad-format="auto"></ins>
+							<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
 						</div>
 					</div>
 		  		</div>						

@@ -52,6 +52,7 @@
 	<meta content='index, follow' name='msnbot'/>
 	<meta content='all' name='googlebot-image'/>
 	<meta name="p:domain_verify" content="03f14801b7f19095317f884649a8218f"/>
+	<meta name="google-site-verification" content="KQnU_rAUmAke0W1Had4_09yVDgDpVnl_r-VFdbu4MfA" />
 	<!-- link css -->
 	<link rel="author" href="https://plus.google.com/+Cartelescreativos" />
 	<link rel="canonical" href="http://www.cartelescreativos.com<?php echo parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH);?>" />
@@ -113,18 +114,6 @@ if(document.location.protocol=='http:'){
 }
 </script>
 <!-- END Tynt Script -->
-<!-- Start of Woopra Code -->
-<script>
-(function(){
-        var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
-})("woopra");
-
-woopra.config({
-    domain: 'cartelescreativos.com'
-});
-woopra.track();
-</script>
-<!-- End of Woopra Code -->	
 </head>
 <body>
 <!-- Google+ Recomendaciones para móviles -->
@@ -140,9 +129,7 @@ woopra.track();
 <!-- <div><a  target="_blank" title="Síguenos en Facebook y comparte nuestros contenidos con tus amigos" href="https://www.facebook.com/Cartelescreativos"><img style="float: left; width:100px; height:35px; padding-top:27px; padding-left:2px;" src="/img/siguenos-facebook.png" alt="Síguenos en Facebook CartelesCreativos" /></a>
 <div style="float: left; padding-top:15px; padding-left:1px;" class="fb-like" data-href="https://www.facebook.com/Cartelescreativos" data-width="50" data-layout="box_count" data-show-faces="false" data-send="false"></div></div> -->
 <!-- End Fans Facebook Flota-->
-	<?php echo $ads->load('<div style="position:fixed;left:10px;top:200px;">#AD[left]#</div>'); ?>
-	<!-- <?php // $user->userTemplateInfo(NULL,$inbox->notification($user->userInfo('id'))); ?> -->
-  
+	<?php $user->userTemplateInfo(NULL,$inbox->notification($user->userInfo('id'))); ?>
   <!-- Begin Header -->
   <nav role="navigation" class="navbar navbar-default">
   	<div class="container-fluid">

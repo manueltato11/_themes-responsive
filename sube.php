@@ -1,5 +1,5 @@
-<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.upload.js"></script>
 <script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.min.js"></script>
+<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.upload.js"></script>
 <script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.form.js"></script>
 
 <?php
@@ -28,7 +28,7 @@ $resultCat=mysql_num_rows($catConsulta)
 					<div class="img-responsive center-block img-rounded" >	
 						<!-- formulario con el que se carga la imagen via ajax -->
 						<form id="imageform" method="post" enctype="multipart/form-data" action="upload.php" >
-						<div class="demot center-block" id="upload">
+						<div class="demot" id="upload">
 							<label for="file">Imagen<span class="required">*</span></label>
 							<input required type="file" name="photoimg" id="photoimg" class="left clear" /><br />
 						</div>
@@ -84,7 +84,6 @@ $resultCat=mysql_num_rows($catConsulta)
 					?>
 					</select>
 				</div>
-					</br>
 					<input type="submit" name="submit_des" value="Enviar" class="btn btn-primary" style="width:69%; margin-left:1px;">
 					<input type="hidden" id="color" name="color" value="0,0,0">
 					<input type="hidden" id="fuente" name="fuente" value="arial">

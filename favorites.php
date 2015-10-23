@@ -38,8 +38,8 @@
 	  </div>
 	</div>
 	<div class="panel panel-primary">
-	  <div class="panel-body">
-		<?php echo $ads->load('<div class="text-center">#AD[right]#</div>'); ?>
+	  <div class="panel-body text-center center-block">
+		<?php echo $ads->load('<div class="text-center center-block">#AD[right]#</div>'); ?>
 	  </div>
 	</div>
 	<div class="panel panel-primary">
@@ -80,8 +80,8 @@
 	});
 	</script>
 	<div class="panel panel-primary sidebarF">
-	  <div class="panel-body">
-		ADS fijo al bajar ADS fijo al bajar!
+	  <div class="panel-body text-center center-block">
+		<?php echo $ads->load('<div class="text-center center-block">#AD[right]#</div>'); ?>
 	  </div>
 	</div>
   </div> <!-- END col-md-4-->

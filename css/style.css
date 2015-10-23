@@ -1,18 +1,34 @@
-.block h1 {height:89px; width:965px; position:absolute; top:-20px; left:-60px; padding:24px 0px 0px 55px; font-family:Times New Roman; color:#fff; font-size:16pt; font-weight:normal; text-shadow:2px 2px 1px #64a2b6; z-index:9}
+.block h1 {
+	height:89px; 
+	width:965px; 
+	position:absolute; 
+	top:-20px; 
+	left:-60px; 
+	padding:24px 0px 0px 55px; 
+	font-family:Times New Roman; 
+	color:#fff; 
+	font-size:16pt; 
+	font-weight:normal; 
+	text-shadow:2px 2px 1px #64a2b6; 
+	z-index:9;
+}
 
 .block h2 a, .block h1 a{text-decoration:none; color:#fff}
 
-.block h2 a:hover, .block h1 a:hover{text-decoration:none; color:#fff}
+.block h2 a:hover, .block h1 a:hover{
+	text-decoration:none; 
+	color: #0ce3ac;
+    }
 
 .block {
-    padding: 10px;
-    border: 1px solid #375A7F;
-    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #375A7F;
+    margin-bottom: 15px;
 }
 
 .object, .ytobject{border:3px solid #fff; background-color:#000; text-align:center}
 
-.mod_tools{background:url(img/bg_object.png); margin:0px 0px 10px 0px; z-index:15; position:relative}
+.mod_tools{margin:0px 0px 10px 0px; z-index:15; position:relative}
 .mod_tools a{display:inline-block; padding:10px; color:#CCC; font-weight:bold}
 .mod_tools a:hover{color:#FFF}
 
@@ -35,7 +51,7 @@
 #footer .links img{position:relative; margin:0px 5px -2px 5px}
 #footer .copyrights{display:block; font-size:12px}
 
-#display_error{background:url('../img/title_full_ribbon.png') no-repeat; height:89px; width:1060px; padding:24px 0px 0px 55px; margin:20px -50px; font-family:Times New Roman; color:#fff; font-size:16pt; font-weight:normal; text-shadow:2px 2px 1px #64a2b6; z-index:9}
+#display_error{height:89px; width:1060px; padding:24px 0px 0px 55px; margin:20px -50px; font-family:Times New Roman; color:#fff; font-size:16pt; font-weight:normal; text-shadow:2px 2px 1px #64a2b6; z-index:9}
 .msg{text-shadow:1px 1px 0px #4A4A4A; color:#EFEFEF; border-radius:6px; padding:6px 10px; margin-bottom:15px}
 .error{background:#965959}
 .alert{background:#B5B057}

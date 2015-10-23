@@ -9,7 +9,7 @@
 		echo $img->getObjects('
 		<div class="block">
 
-		'.($page->load('object_title')?'<h2 class="titulo"><a href="'.$rewrite->img("#ID#","#REWRITE-TITLE#").'">#TITLE#</a></h2>':'').'
+		'.($page->load('object_title')?'<h2 class="titulo"><a href="'.$rewrite->img("#ID#","#REWRITE-TITLE#").'" title="#TITLE#">#TITLE#</a></h2>':'').'
 			<!-- Begin Info -->
 			<div class="info">
 				<span><span class="fa fa-check-square-o"></span><strong> Descripción: </strong> #TITLE#, #SOURCE#</span><br>

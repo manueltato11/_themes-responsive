@@ -10,31 +10,30 @@
 	<div class="panel panel-primary">
 	  <div class="panel-body contentF">
 		<?php 
-		global $urlimg;
-		global $rewrite;
+		global $urlimg, $rewrite, $vote_up, $vote_down;
+        $ratingCount = $vote_up + $vote_down;
+        $ratingValue = 5 * $vote_up / $ratingCount;
 		echo $img->getObject('
-		<div class="block">
+		<div class="block" itemscope itemtype="http://schema.org/ImageObject">
 		'.($page->load('object_title')?'<h2 class="titulo" itemprop="name"><span>#TITLE#</span></h2>':'').'
 		<div class="info">
-			<span><span class="fa fa-check-square-o"></span><strong> Descripción: </strong> #TITLE#, #SOURCE#</span><br>
+			<span><span class="fa fa-check-square-o"></span><strong> Descripción: </strong><span itemprop="description"> #TITLE#, #SOURCE#</span></span><br>
 			<span><span class="fa fa-picture-o"></span><strong> Cartel de: </strong> #CATEGORY# </span> | 
-			<span><span class="fa fa-user"></span><strong> Autor(a): </strong> <a href="'.$rewrite->user("#OWNER-ID#", "#REWRITE-OWNER#").'" title="Ver Perfil de #OWNER#">#OWNER#</a></span> | 
-			<span><span class="fa fa-clock-o"></span><strong> Publicada el: </strong> #DATE#</span> | 
-			<span><span class="fa fa-comments"></span><strong> <a href="'.$rewrite->img("#ID#","#REWRITE-TITLE#").'#comments" title="Ver comentarios">Comentarios (<fb:comments-count href='.$rewrite->img("#ID#", "#REWRITE-TITLE#").'></fb:comments-count>)</a></strong></span><br><br>
+			<span><span class="fa fa-user"></span><strong> Autor(a): </strong> <a href="'.$rewrite->user("#OWNER-ID#", "#REWRITE-OWNER#").'" title="Ver Perfil de #OWNER#" itemprop="author">#OWNER#</a></span> | 
+			<span><span class="fa fa-clock-o"></span><strong> Publicada el: </strong><time datetime="2015-10-23T00:22:42+02:00"><meta itemprop="datePublished" content="2008-01-25 11:16 pm"> #DATE#</time></span> | 
+			<span><span class="fa fa-comments"></span><strong> <a href="'.$rewrite->img("#ID#","#REWRITE-TITLE#").'#comments" title="Ver comentarios">Comentarios <span itemprop="commentCount">(<fb:comments-count href='.$rewrite->img("#ID#", "#REWRITE-TITLE#").'></fb:comments-count>)</span></a></strong></span><br><br>
 		</div> <!-- End Info -->
 		<!-- Begin Object -->
 		<div class="[video=yt]object img-responsive img-thumbnail center-block">
-			<div class="podpis" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+			<div class="podpis">
 				<span class="lewa">
 					[FAV=<a href="#" title="Agregar a mis Favoritos" onClick="fav(#ID#,this); return false"></a>|<a href="#" title="Eliminar de mis Favoritos" onClick="fav(#ID#,this); return false;"></a>]
 				</span>
-				<meta itemprop="ratingValue" content="4.8">
-				<meta itemprop="ratingCount" content="14">
 			</div>
 			[object url=#]
 		</div> <!-- End Object -->
 		<!-- Votos y Redes sociales-->
-		<div class="shared">
+		<div class="shared" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
 				<div class="addthis_toolbox addthis_default_style " 
 					addthis:title="#TITLE#, #SOURCE# #CartelesCreativos #Desmotivaciones"
 					addthis:url="'.$rewrite->img("#ID#", "#REWRITE-TITLE#").'"
@@ -127,15 +126,18 @@
 						<a onclick="prompt(&quot;Añadelo en tu página. Cópialo y colocalo donde quieras, en tu página, blog, foro, etc:&quot;, &quot;\<a href=\&quot;'.$urlimg.'\&quot;\>#TITLE#, #SOURCE#\</a\>\<br /\>\<a href=\&quot;'.$rewrite->img("#ID#","#REWRITE-TITLE#").'\&quot;><img src=\&quot;'.$urlimg.'\&quot; alt=\&quot;#TITLE#\&quot; title=\&quot;#TITLE#\&quot; /\>\</a\>&quot;)" title="Añadir el Cartel: #TITLE# en tu página, blog o foro." class="btn btn-primary btn-block"><span class="fa fa-plus"></span> Añadir en tu página</a> 
 					</diV>
 				</div>
+			<meta itemprop="itemReviewed" content="#TITLE#">
+			<meta itemprop="ratingValue" content="'.$ratingValue.'">
+			<meta itemprop="ratingCount" content="'.$ratingCount.'">
 			</div> <!-- END shared -->
 			<div style="clear: both;"></div>
 			#MOD_TOOLS#
 		</div>
 		', $_GET['id']); ?>
 		<!-- Begin Block comment -->
-		<div class="panel panel-primary">
+		<div class="panel panel-primary" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
 		  <div class="panel-heading">
-		    <h3 class="panel-title"><span class="fa fa-comments-o  fa-1x"></span> Comentarios y opiniones</h3>
+		    <h3 class="panel-title" itemprop="parentItem"><span class="fa fa-comments-o  fa-1x"></span> Comentarios y opiniones</h3>
 		  </div>
 		  <div class="panel-body">
 		    <div class="block" id="comments">

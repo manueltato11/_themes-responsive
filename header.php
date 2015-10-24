@@ -10,8 +10,9 @@
       lang="es" xml:lang="es">
 
 <head>
-
+	
 	<?php include_once "metatags.php";
+	global $rewrite;
 	$titulo = (isset($title)?strip_tags($title).' - ':'').$page->load('title').' '.$page->load('slogan');
     // cuadramos al dimension  del titulo a <65 caracteres
     $titulo = strip_tags($titulo);
@@ -25,6 +26,11 @@
 	$url = "http://" . $domain .$curreturl ;  
 	return $url; 
 	}*/
+	$domain = $_SERVER['HTTP_HOST'];
+	$curreturl =   $_SERVER['REQUEST_URI'];
+	$url = $domain .$curreturl;
+	$varadd = $domain . "/carteles/add.php";
+	$varcrear = $domain . "/carteles/crear-cartel/";
 	?>
 	<title><?php echo $titulo; ?></title>
 	<meta charset="UTF-8">
@@ -62,15 +68,23 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/css/rrssb.css" />
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
 	<!-- javascript y jquery para Ajax -->
-	<script type="text/javascript" async src="http://code.jquery.com/jquery-latest.js"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/messages.js"></script>
 	<!-- <script type="text/javascript" async src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/scripts.js"></script> -->
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?vote"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?favorites"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/tools.php?mod"></script>
 	<script type="text/javascript" async src="<?php echo $page->host(); ?>_js/facebook.js"></script>
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-549a4cda38e1acac" async="async"></script>
-	<script src="<?php echo $page->host(); ?>_themes/<?php echo $theme; ?>/js/jquery.1.10.2.min.js"></script>
+	<script type="text/javascript" async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-549a4cda38e1acac" async="async"></script>
+	<?php
+	if ($url == $varadd || $url == $varcrear) {
+		echo '<script type="text/javascript" async src="'.$page->host().'js/jquery.min.js"></script>
+	<script type="text/javascript" async src="'.$page->host().'js/jquery.upload.js"></script>
+	<script type="text/javascript" async src="'.$page->host().'js/jquery.form.js"></script>';
+	} else {
+		echo '<script type="text/javascript" async src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" src="'.$page->host().'_themes/'.$theme.'/js/jquery.1.10.2.min.js"></script>';
+	}
+	?>
 
 	<script type="text/javascript" async>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -129,7 +143,7 @@ if(document.location.protocol=='http:'){
 <!-- <div><a  target="_blank" title="Síguenos en Facebook y comparte nuestros contenidos con tus amigos" href="https://www.facebook.com/Cartelescreativos"><img style="float: left; width:100px; height:35px; padding-top:27px; padding-left:2px;" src="/img/siguenos-facebook.png" alt="Síguenos en Facebook CartelesCreativos" /></a>
 <div style="float: left; padding-top:15px; padding-left:1px;" class="fb-like" data-href="https://www.facebook.com/Cartelescreativos" data-width="50" data-layout="box_count" data-show-faces="false" data-send="false"></div></div> -->
 <!-- End Fans Facebook Flota-->
-	<?php $user->userTemplateInfo(NULL,$inbox->notification($user->userInfo('id'))); ?>
+	<!-- <?php //$user->userTemplateInfo(NULL,$inbox->notification($user->userInfo('id'))); ?> -->
   <!-- Begin Header -->
   <nav role="navigation" class="navbar navbar-default">
   	<div class="container-fluid">

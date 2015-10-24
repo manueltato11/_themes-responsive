@@ -159,13 +159,13 @@
 	</div> <!-- panel panel-primary -->
 	<!-- Consultas de los Carteles Relacionados-->
 	<?php
-	$imgAle=("SELECT * FROM `tentego_img` WHERE `type` = 'img' AND `is_waiting`=0 ORDER BY RAND() LIMIT 3");
-	$resulAle=mysql_query($imgAle) or die ("Error al hacer la consulta al server: ".mysql_error());
+	//$imgAle=("SELECT * FROM `tentego_img` WHERE `type` = 'img' AND `is_waiting`=0 ORDER BY RAND() LIMIT 3");
+	//$resulAle=mysql_query($imgAle) or die ("Error al hacer la consulta al server: ".mysql_error());
 	//Compruebo si hay algun resultado
-	while ($rom = mysql_fetch_array($resulAle, MYSQL_ASSOC)) {
-		echo '<div class="col-md-4 col-sm-4 col-xs-12"><div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title">Quizás también te interese</h3></div><div class="panel-body"><a href="'.$rewrite->img($rom['id'],$rewrite->changeSigns($rom['title'])).'" title="'.$rom["title"].', '.$rom["source"].'"><img  src="'.$rom["src"].'" alt="'.$rom["title"].' '.$rom["source"].'" class="img-responsive img-rounded center-block" /></a></div></div></div> <!-- end col-md-4 col-sm-8 col-xs-12 -->';
-	}
-	mysql_free_result($resulAle);
+	//while ($rom = mysql_fetch_array($resulAle, MYSQL_ASSOC)) {
+	//	echo '<div class="col-md-4 col-sm-4 col-xs-12"><div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title">Quizás también te interese</h3></div><div class="panel-body"><a href="'.$rewrite->img($rom['id'],$rewrite->changeSigns($rom['title'])).'" title="'.$rom["title"].', '.$rom["source"].'"><img  src="'.$rom["src"].'" alt="'.$rom["title"].' '.$rom["source"].'" class="img-responsive img-rounded center-block" /></a></div></div></div> <!-- end col-md-4 col-sm-8 col-xs-12 -->';
+	//}
+	//mysql_free_result($resulAle);
 	?>
   </div> <!-- END col-md-8-->
   <!-- End Block -->

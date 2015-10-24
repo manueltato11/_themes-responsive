@@ -1,7 +1,3 @@
-<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.min.js"></script>
-<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.upload.js"></script>
-<script type="text/javascript" async src="<?php echo $page->host(); ?>js/jquery.form.js"></script>
-
 <?php
 global $rewrite;
 $catConsulta=mysql_query("SELECT * FROM `tentego_img_cat` ORDER BY `name` ASC");
